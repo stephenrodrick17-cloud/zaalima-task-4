@@ -1,0 +1,53 @@
+# Aggressive exclusion for Vercel
+backend/venv
+backend/uploads
+backend/model/trained_models
+model/trained_models
+archive*
+archive (2)
+archive (3)
+archive (4)
+frontend/node_modules
+.venv
+venv
+*.pt
+*.onnx
+*.weights
+dataset/
+notebooks/
+scripts/
+tests/
+docs/
+# Images
+*.jpg
+*.png
+!frontend/src/assets/*.jpg
+!frontend/src/assets/*.png
+!frontend/public/*.jpg
+!frontend/public/*.png
+!frontend/public/*.ico
+!frontend/public/*.svg
+*.sh
+*.ps1
+*.js
+!frontend/src/**/*.js
+!frontend/src/**/*.jsx
+!frontend/src/**/*.css
+!frontend/src/**/*.svg
+!BROWSER_CONSOLE_TEST.js
+prepare_log.txt
+train_log.txt
+test_*.py
+run_backend.py
+install_pytorch_gpu.py
+setup_gpu.py
+streamlit_app.py
+requirements_streamlit.txt
+README*
+!README.md
+PROJECT_SUMMARY.md
+MODEL_TRAINING_COMPLETE.md
+FINETUNING*
+ENHANCEMENT*
+DEPLOYMENT_COMPLETE.md
+quickstart*

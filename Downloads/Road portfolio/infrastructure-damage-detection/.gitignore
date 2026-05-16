@@ -17,11 +17,14 @@ env/
 *.h5
 *.ckpt
 *.pkl
+model/datasets/
+model/trained_models/
 
 # Data
 *.csv
 *.db
 *.sqlite
+database/archive*/
 
 # IDE
 .vscode/

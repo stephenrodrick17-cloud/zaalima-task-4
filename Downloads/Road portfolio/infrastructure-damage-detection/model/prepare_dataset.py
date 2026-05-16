@@ -292,4 +292,4 @@ def prepare_dataset():
 
 if __name__ == "__main__":
     yaml_path = prepare_dataset()
-    print(f"\n✓ Ready to train! Use: --data {yaml_path}")
+    print(f"\nReady to train! Use: --data {yaml_path}")

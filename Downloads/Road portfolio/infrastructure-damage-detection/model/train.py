@@ -24,9 +24,9 @@ def train_model():
     # Start training with minimal resources to avoid memory errors
     results = model.train(
         data=data_path,
-        epochs=10,  # Reduced epochs for now to ensure it finishes
-        imgsz=160,  # Significantly reduced image size
-        batch=4,    # Significantly reduced batch size
+        epochs=50,  # Increased epochs for a full training run
+        imgsz=320,  # Moderate image size for better accuracy
+        batch=8,    # Moderate batch size
         workers=0,  # Disable multiprocessing
         device=device,
         project='runs/detect',

@@ -75,39 +75,53 @@ def train_model():
     try:
         from ultralytics import YOLO
         
-        # Initialize model
-        logger.info("Loading YOLOv8 base model...")
-        model = YOLO('yolov8m.pt')  # Medium model - good balance
-        
         # Prepare data config
         data_yaml = str(DATASET_DIR / "data.yaml")
         
         if not os.path.exists(data_yaml):
             logger.error(f"data.yaml not found at {data_yaml}")
             return False
+
+        # Find the latest training run to resume
+        latest_run = None
+        run_dirs = sorted(MODELS_DIR.glob("infrastructure_damage_gpu*"), key=os.path.getmtime, reverse=True)
+        for run_dir in run_dirs:
+            last_pt = run_dir / "weights" / "last.pt"
+            if last_pt.exists():
+                latest_run = last_pt
+                break
+        
+        if latest_run:
+            logger.info(f"Resuming training from: {latest_run}")
+            model = YOLO(str(latest_run))
+            resume = True
+        else:
+            logger.info("Loading YOLOv8 base model for new training...")
+            model = YOLO('yolov8m.pt')
+            resume = False
         
         logger.info(f"Training with data config: {data_yaml}")
         
         # Train model
         logger.info("\nStarting training on GPU... (optimized for 4GB VRAM)")
-        logger.info("GPU Training with memory-optimized settings")
         results = model.train(
             data=data_yaml,
-            epochs=50,    # Reduced from 100 for faster training
-            imgsz=384,    # Further reduced to fit 4GB VRAM
-            batch=8,      # Reduced to 8 for 4GB GPU
-            patience=15,
+            epochs=100,
+            imgsz=384,
+            batch=8,
+            patience=20,
             device=0,
             project=str(MODELS_DIR),
             name='infrastructure_damage_gpu',
             save=True,
             cache=False,
             augment=True,
-            mosaic=0.5,   # Reduced mosaic
-            workers=1,    # Single worker for stability
-            close_mosaic=5,
-            amp=True,     # Automatic Mixed Precision for memory savings
-            optimizer='SGD'  # Lighter optimizer than Adam
+            mosaic=0.5,
+            workers=1,
+            close_mosaic=10,
+            amp=True,
+            optimizer='SGD',
+            resume=resume
         )
         
         logger.info("✓ Model training complete")
