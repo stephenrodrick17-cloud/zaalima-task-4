@@ -1,8 +1,3 @@
-# Weeks 1–4 Progress & Features (README)
-
-This README summarizes **Week 1 through Week 4** work and the features implemented in this repository.
-
----
 
 ## Week 1 — Project Setup & Base UI
 
