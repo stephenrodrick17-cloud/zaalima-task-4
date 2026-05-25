@@ -1,4 +1,3 @@
-
 ## Week 1 — Project Setup & Base UI
 
 ### Goals
