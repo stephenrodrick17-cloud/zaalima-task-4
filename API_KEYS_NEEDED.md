@@ -1,15 +1,6 @@
 # API Keys Needed
 
 This project requires a few API keys and secrets to run end‑to‑end.
-
-## Where to put them
-
-Create a file at:
-
-- `backend/.env`
-
-> If you don’t have a `backend/.env` yet, copy `backend/.env.example` (if present) and rename it.
-
 ## Required keys
 
 ### 1) OpenRouter API Key
