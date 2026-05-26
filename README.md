@@ -3,7 +3,6 @@
 ### Goals
 - Initialize the project structure and prepare the baseline UI.
 - Establish styling foundations and reusable layout patterns.
-
 ### Features Delivered
 - **Project scaffolding**
   - Basic folder structure for HTML/CSS/JavaScript.
