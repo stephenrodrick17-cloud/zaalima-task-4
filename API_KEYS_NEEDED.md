@@ -1,5 +1,4 @@
 # API Keys Needed
-
 This project requires a few API keys and secrets to run end‑to‑end.
 ## Required keys
 
