@@ -1,7 +1,5 @@
 # Contributing
 
-Thanks for contributing to **zaalima-task-4**.
-
 ## Ground rules
 
 - Keep changes small and focused.
