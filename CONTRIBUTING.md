@@ -1,7 +1,6 @@
 # Contributing
 
 ## Ground rules
-
 - Keep changes small and focused.
 - Prefer clear names and readable code over clever code.
 - Add/update docs when behavior changes.
