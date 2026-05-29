@@ -1,7 +1,5 @@
 # Architecture
-This document explains how **zaalima-task-4** is structured at a high level and how a request flows through the system.
-
-> This is intentionally lightweight and repo-agnostic. Update the sections marked **(project-specific)** as the implementation evolves.
+This document explains how zaalima-task-4 is structured at a high level and how a request flows through the system.
 
 ## High-level components
 
