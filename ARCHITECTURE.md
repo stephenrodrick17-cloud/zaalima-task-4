@@ -1,6 +1,5 @@
 # Architecture
 This document explains how zaalima-task-4 is structured at a high level and how a request flows through the system.
-
 ## High-level components
 
 - **Frontend**: UI for authentication, chat, and document upload.
