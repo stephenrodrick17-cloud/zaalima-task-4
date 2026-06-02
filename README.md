@@ -5,7 +5,6 @@ A clean, production-ready **vanilla web app** that turns plain‑English ideas i
 Type what you want to build, click **Generate**, then preview every generated file and download either a single file or the entire extension as a `.zip`.
 
 ---
-
 ## What this project is
 
 ExtForge is a single-page app (HTML/CSS/JS) that:
@@ -15,7 +14,6 @@ ExtForge is a single-page app (HTML/CSS/JS) that:
 - lets you download:
   - one file at a time, or
   - all files as a ZIP (via **JSZip**)
-
 ---
 
 ## Features
