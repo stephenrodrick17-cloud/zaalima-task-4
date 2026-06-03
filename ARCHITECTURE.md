@@ -1,7 +1,6 @@
 # Architecture
 This document explains how zaalima-task-4 is structured at a high level and how a request flows through the system.
 ## High-level components
-
 - **Frontend**: UI for authentication, chat, and document upload.
 - **Backend API**: Handles auth verification, chat requests, document ingestion, and retrieval.
 - **Database / Storage**: Stores users, documents, and metadata (project-specific).
