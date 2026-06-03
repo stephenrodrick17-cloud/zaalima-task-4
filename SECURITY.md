@@ -1,6 +1,5 @@
 # Security Policy
 This repository contains code that uses external API keys and authentication providers.
-
 ## Reporting a vulnerability
 
 If you discover a security issue, **do not open a public issue** with sensitive details.
