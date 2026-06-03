@@ -1,9 +1,7 @@
 # ExtForge — Chrome Extension Generator
 
 A clean, production-ready **vanilla web app** that turns plain‑English ideas into complete, downloadable **Chrome Extensions (Manifest V3)**.
-
 Type what you want to build, click **Generate**, then preview every generated file and download either a single file or the entire extension as a `.zip`.
-
 ---
 ## What this project is
 
