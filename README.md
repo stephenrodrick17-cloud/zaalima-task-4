@@ -33,7 +33,6 @@ ExtForge is a single-page app (HTML/CSS/JS) that:
 - **Claude Sonnet 4** (Anthropic Messages API)
 - **JSZip** (CDN) for ZIP downloads
 - Google Fonts: **JetBrains Mono** + **Syne**
-
 ---
 
 ## Project Structure
