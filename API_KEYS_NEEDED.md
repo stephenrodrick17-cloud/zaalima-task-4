@@ -2,7 +2,6 @@
 ### 1) OpenRouter API Key
 
 Used for LLM access (chat/completions and/or embeddings depending on your implementation).
-
 1. Create a key: https://openrouter.ai/keys
 2. Add to `backend/.env`:
 
