@@ -48,7 +48,6 @@ Downloads/zallima 4 task/
 ```
 
 > Note: The root `README.md` also includes a week-by-week summary. This README focuses on the actual implemented app in the repository.
-
 ---
 
 ## Getting Started
