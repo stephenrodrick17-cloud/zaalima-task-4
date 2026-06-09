@@ -8,7 +8,6 @@ This document explains how zaalima-task-4 is structured at a high level and how 
 - **LLM Provider**: Uses **OpenRouter** for model access.
 
 ## Typical request flows
-
 ### 1) Sign-in / auth
 
 1. User signs in from the frontend.
